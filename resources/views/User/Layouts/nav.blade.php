@@ -285,25 +285,28 @@
 
 
 
-            <div class="offcanvas offcanvas-start p-4 p-lg-0 overflow-auto" style="height: 200px;" id="navbar-default">
+            <div class="offcanvas offcanvas-start p-4 p-lg-0 overflow-auto" style="height: 500px;" id="navbar-default">
 
                 <div class="d-flex justify-content-between align-items-center mb-2 d-block d-lg-none">
                     <div><img src="/User/assets/images/logo/phone-store.svg" alt="Phone store"> Phone store</div>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="d-block d-lg-none mb-2 pt-2">
-                    <div class="d-flex align-items-center">
-                        <input type="text" class="form-control border-end-0" placeholder="Search for products.."
-                            aria-label="Search for products.." aria-describedby="basic-addon2">
-                        <span class="input-group-text bg-transparent" id="basic-addon2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-search" data-darkreader-inline-stroke=""
-                                style="--darkreader-inline-stroke: currentColor;">
-                                <circle cx="11" cy="11" r="8"></circle>
-                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                            </svg></span>
-                    </div>
+                    <form action="{{route('home.searchProduct')}}" method="GET" class="search-header">
+                        <div class="d-flex align-items-center">
+                            <input type="text" class="form-control border-end-0" name="search"
+                                placeholder="Search for products.." aria-label="Search for products.."
+                                aria-describedby="basic-addon2">
+                            <span class="input-group-text bg-transparent" id="basic-addon2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-search"
+                                    data-darkreader-inline-stroke="" style="--darkreader-inline-stroke: currentColor;">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                </svg></span>
+                        </div>
+                    </form>
                 </div>
                 <div class="d-block d-lg-none mb-2 pt-2">
                     <a class="btn btn-primary w-100 d-flex justify-content-center align-items-center"
