@@ -23,7 +23,7 @@
 - **Profile page**: Edit profile, check invoices
 
 - **Wish list page**: Products will be added here, can add to cart page
-\\<img src="/review_images/wishlist.png" width="1000px">\\
+\\<img src="/review_images/wishlist.png" width="1000px">\
 - **Home page**: Popular products
 \\<img src="/review_images/index.png" width="1000px">\\
 - **All product page**: Show all product
